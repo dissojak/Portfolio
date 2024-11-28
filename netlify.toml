@@ -1,0 +1,2 @@
+[build.environment]
+  NODE_VERSION = "16"  # specify the correct version of Node.js for your project
