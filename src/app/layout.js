@@ -1,8 +1,8 @@
 import { Poppins } from "next/font/google";
 import "./css/globals.css";
 import Link from "next/link";
-import Sidebar from "@/components/Sidebar";
-import Navbar from "@/components/NavBar";
+import Sidebar from "../components/Sidebar";
+import Navbar from "../components/NavBar";
 
 // Load Poppins font
 const poppins = Poppins({
