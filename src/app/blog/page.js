@@ -7,8 +7,6 @@ function Blog() {
         <div className="max-w-screen-md mx-auto">
           <h1 className="text-4xl font-bold text-center mb-4">My Blog</h1>
           <p className="text-center mb-8">Welcome to my blog!</p>
-
-          {/* Add your blog posts here */}
           <div className="space-y-8">
             <div className="bg-white shadow-md rounded-lg p-6">
               <h2 className="text-2xl font-bold mb-2">Blog Post Title</h2>
@@ -16,7 +14,6 @@ function Blog() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
             </div>
-            {/* Add more blog posts as needed */}
           </div>
         </div>
       </div>
