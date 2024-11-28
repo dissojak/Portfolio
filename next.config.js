@@ -1,3 +1,3 @@
 module.exports = {
-  exportTrailingSlash: true, // Optional, ensures all routes have trailing slashes
+  trailingSlash: true,  // Correct configuration for Next.js 12+ and beyond
 };
