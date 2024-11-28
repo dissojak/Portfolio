@@ -15,22 +15,22 @@ const Aboutpage = () => {
   const testimonialsData = [
     {
       name: "Hazem Ben Saria",
-      avatar: "./assets/images/avatar-1.png",
+      avatar: "/assets/images/avatar-1.png",
       text: "Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of the client.",
     },
     {
       name: "Jessica Miller",
-      avatar: "./assets/images/avatar-2.png",
+      avatar: "/assets/images/avatar-2.png",
       text: "Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of the client.",
     },
     {
       name: "Emily Evans",
-      avatar: "./assets/images/avatar-3.png",
+      avatar: "/assets/images/avatar-3.png",
       text: "Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of the client.",
     },
     {
       name: "Henry William",
-      avatar: "./assets/images/avatar-4.png",
+      avatar: "/assets/images/avatar-4.png",
       text: "Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of the client.",
     },
   ];
@@ -68,7 +68,7 @@ const Aboutpage = () => {
           <li className="service-item">
             <div className="service-icon-box">
               <img
-                src="./assets/images/icon-design.svg"
+                src="/assets/images/icon-design.svg"
                 alt="Design Icon"
                 width="40"
                 className="imageSVG"
@@ -85,7 +85,7 @@ const Aboutpage = () => {
           <li className="service-item">
             <div className="service-icon-box">
               <img
-                src="./assets/images/icon-dev.svg"
+                src="/assets/images/icon-dev.svg"
                 alt="Web Development Icon"
                 width="40"
               />
@@ -100,7 +100,7 @@ const Aboutpage = () => {
           <li className="service-item">
             <div className="service-icon-box">
               <img
-                src="./assets/images/icon-app.svg"
+                src="/assets/images/icon-app.svg"
                 alt="Mobile App Icon"
                 width="40"
               />
@@ -115,7 +115,7 @@ const Aboutpage = () => {
           <li className="service-item">
             <div className="service-icon-box">
               <img
-                src="./assets/images/icon-photo.svg"
+                src="/assets/images/icon-photo.svg"
                 alt="Photography Icon"
                 width="40"
               />
@@ -175,7 +175,7 @@ const Aboutpage = () => {
                   width="80"
                 />
               </figure>
-              <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              <img src="/assets/images/icon-quote.svg" alt="quote icon" />
             </div>
             <div className="modal-content">
               <h4 className="h3 modal-title">{activeTestimonial.name}</h4>
@@ -202,7 +202,7 @@ const Aboutpage = () => {
           ].map((logo, index) => (
             <li key={index} className="clients-item">
               <a href="#">
-                <img src={`./assets/images/${logo}.png`} alt="client logo" />
+                <img src={`/assets/images/${logo}.png`} alt="client logo" />
               </a>
             </li>
           ))}
