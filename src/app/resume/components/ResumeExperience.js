@@ -1,3 +1,6 @@
+import { briefcaseOutline } from "ionicons/icons";
+import { IonIcon } from "@ionic/react";
+
 import React from "react";
 
 const TimelineItem = ({ title, timeSpan, description }) => (
@@ -13,7 +16,7 @@ export default function ResumeExperience({ experience }) {
     <section className="timeline">
       <div className="title-wrapper">
         <div className="icon-box">
-          <div name="book-outline"></div>
+          <IonIcon icon={briefcaseOutline} />
         </div>
         <h3 className="h3">Experience</h3>
       </div>

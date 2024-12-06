@@ -1,19 +1,34 @@
-'use client'; // Mark this as a client component
+"use client"; // Mark this as a client component
 
-import { IonIcon } from '@ionic/react';
-import { mailOutline, phonePortraitOutline, calendarOutline, locationOutline, logoFacebook, logoTwitter, logoInstagram } from 'ionicons/icons';
-import '../app/css/globals.css'; // Make sure your CSS is correct
+import { IonIcon } from "@ionic/react";
+import {
+  mailOutline,
+  phonePortraitOutline,
+  calendarOutline,
+  locationOutline,
+  logoFacebook,
+  logoTwitter,
+  logoInstagram,
+} from "ionicons/icons";
+import "../app/css/globals.css"; // Make sure your CSS is correct
 
 const Sidebar = () => {
   return (
     <aside className="sidebar" data-sidebar>
       <div className="sidebar-info">
         <figure className="avatar-box">
-          <img src="/assets/images/Avatar.png" alt="Adem Ben Amor" width="80" className="avatar-box" />
+          <img
+            src="/assets/images/Avatar.png"
+            alt="Adem Ben Amor"
+            width="80"
+            className="avatar-box"
+          />
         </figure>
 
         <div className="info-content">
-          <h1 className="name" title="Adem Ben Amor">Adem Ben Amor</h1>
+          <h1 className="name" title="Adem Ben Amor">
+            Adem Ben Amor
+          </h1>
           <p className="title">Web Developer</p>
         </div>
 
@@ -33,7 +48,9 @@ const Sidebar = () => {
             </div>
             <div className="contact-info">
               <p className="contact-title">Email</p>
-              <a href="mailto:DissoJak@gmail.com" className="contact-link">DissoJak@gmail.com</a>
+              <a href="mailto:DissoJak@gmail.com" className="contact-link">
+                DissoJak@gmail.com
+              </a>
             </div>
           </li>
 
@@ -43,7 +60,9 @@ const Sidebar = () => {
             </div>
             <div className="contact-info">
               <p className="contact-title">Phone</p>
-              <a href="tel:+21623039320" className="contact-link">(+216) 23-039-320</a>
+              <a href="tel:+21623039320" className="contact-link">
+                (+216) 23-039-320
+              </a>
             </div>
           </li>
 

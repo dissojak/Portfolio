@@ -1,16 +1,11 @@
-'use client'; // Ensure this is a client-side component
+'use client';
 
-import { useState } from 'react';
-import '../app/css/globals.css'; // Ensure the CSS is loaded
+import { usePathname } from 'next/navigation';
+// import '../app/css/globals.css'; 
 import Link from 'next/link';
 
 const Navbar = () => {
-  // State to track the active nav link
-  const [activeLink, setActiveLink] = useState('about');
-
-  const handleNavClick = (link) => {
-    setActiveLink(link); // Update active link when a link is clicked
-  };
+  const pathname = usePathname(); // Get the current path
 
   return (
     <nav className="navbar">
@@ -18,8 +13,7 @@ const Navbar = () => {
         <li className="navbar-item">
           <Link
             href="/about"
-            className={`navbar-link ${activeLink === 'about' ? 'active' : ''}`}
-            onClick={() => handleNavClick('about')}
+            className={`navbar-link ${pathname.includes('/about') ? 'active' : ''}`}
             data-nav-link
           >
             About
@@ -29,8 +23,7 @@ const Navbar = () => {
         <li className="navbar-item">
           <Link
             href="/resume"
-            className={`navbar-link ${activeLink === 'resume' ? 'active' : ''}`}
-            onClick={() => handleNavClick('resume')}
+            className={`navbar-link ${pathname.includes('/resume') ? 'active' : ''}`}
             data-nav-link
           >
             Resume
@@ -40,8 +33,7 @@ const Navbar = () => {
         <li className="navbar-item">
           <Link
             href="/portfolio"
-            className={`navbar-link ${activeLink === 'portfolio' ? 'active' : ''}`}
-            onClick={() => handleNavClick('portfolio')}
+            className={`navbar-link ${pathname.includes('/portfolio') ? 'active' : ''}`}
             data-nav-link
           >
             Portfolio
@@ -51,8 +43,7 @@ const Navbar = () => {
         <li className="navbar-item">
           <Link
             href="/blog"
-            className={`navbar-link ${activeLink === 'blog' ? 'active' : ''}`}
-            onClick={() => handleNavClick('blog')}
+            className={`navbar-link ${pathname.includes('/blog') ? 'active' : ''}`}
             data-nav-link
           >
             Blog
@@ -62,8 +53,7 @@ const Navbar = () => {
         <li className="navbar-item">
           <Link
             href="/contact"
-            className={`navbar-link ${activeLink === 'contact' ? 'active' : ''}`}
-            onClick={() => handleNavClick('contact')}
+            className={`navbar-link ${pathname.includes('/contact') ? 'active' : ''}`}
             data-nav-link
           >
             Contact
