@@ -1,19 +1,21 @@
-'use client';
+"use client";
 
-import { usePathname } from 'next/navigation';
-// import '../app/css/globals.css'; 
-import Link from 'next/link';
+import { usePathname } from "next/navigation";
+// import '../app/css/globals.css';
+import Link from "next/link";
 
 const Navbar = () => {
   const pathname = usePathname(); // Get the current path
-
+  // console.log("pathname is : ",pathname === "/");
   return (
     <nav className="navbar">
       <ul className="navbar-list">
         <li className="navbar-item">
           <Link
             href="/about"
-            className={`navbar-link ${pathname.includes('/about') ? 'active' : ''}`}
+            className={`navbar-link ${
+              pathname === "/" || pathname.includes("/about") ? "active" : ""
+            }`}
             data-nav-link
           >
             About
@@ -23,7 +25,9 @@ const Navbar = () => {
         <li className="navbar-item">
           <Link
             href="/resume"
-            className={`navbar-link ${pathname.includes('/resume') ? 'active' : ''}`}
+            className={`navbar-link ${
+              pathname.includes("/resume") ? "active" : ""
+            }`}
             data-nav-link
           >
             Resume
@@ -33,7 +37,9 @@ const Navbar = () => {
         <li className="navbar-item">
           <Link
             href="/portfolio"
-            className={`navbar-link ${pathname.includes('/portfolio') ? 'active' : ''}`}
+            className={`navbar-link ${
+              pathname.includes("/portfolio") ? "active" : ""
+            }`}
             data-nav-link
           >
             Portfolio
@@ -43,7 +49,9 @@ const Navbar = () => {
         <li className="navbar-item">
           <Link
             href="/blog"
-            className={`navbar-link ${pathname.includes('/blog') ? 'active' : ''}`}
+            className={`navbar-link ${
+              pathname.includes("/blog") ? "active" : ""
+            }`}
             data-nav-link
           >
             Blog
@@ -53,7 +61,9 @@ const Navbar = () => {
         <li className="navbar-item">
           <Link
             href="/contact"
-            className={`navbar-link ${pathname.includes('/contact') ? 'active' : ''}`}
+            className={`navbar-link ${
+              pathname.includes("/contact") ? "active" : ""
+            }`}
             data-nav-link
           >
             Contact
