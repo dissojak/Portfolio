@@ -11,16 +11,18 @@ import {
   logoInstagram,
 } from "ionicons/icons";
 import "../app/css/globals.css"; // Make sure your CSS is correct
+import Image from "next/image";
 
 const Sidebar = () => {
   return (
     <aside className="sidebar" data-sidebar>
       <div className="sidebar-info">
         <figure className="avatar-box">
-          <img
-            src="/assets/images/Avatar.png"
+          <Image
+            src="/assets/images/Avatar.png" // Updated path with leading slash
             alt="Adem Ben Amor"
-            width="80"
+            width={100}
+            height={100}
             className="avatar-box"
           />
         </figure>
