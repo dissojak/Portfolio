@@ -17,7 +17,7 @@ const Aboutpage = () => {
 
       <section className="about-text">
         <p>
-          I'm Creative Director and UI/UX Designer from Nabeul, Tunisia, working
+          I&apos;m Creative Director and UI/UX Designer from Nabeul, Tunisia, working
           in web development and Social media. I enjoy turning complex problems
           into simple, beautiful, and intuitive designs.
         </p>
