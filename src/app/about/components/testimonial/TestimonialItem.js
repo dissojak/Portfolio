@@ -9,8 +9,8 @@ export default function TestimonialItem({ testimonial, onClick }) {
           <Image
             src={testimonial.avatar} 
             alt={testimonial.name}
-            width={100}
-            height={100} 
+            width={80}
+            height={80} 
           />
         </figure>
         <h4 className="h4 testimonials-item-title">{testimonial.name}</h4>

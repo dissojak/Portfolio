@@ -22,7 +22,7 @@ const Sidebar = () => {
             src="/assets/images/Avatar.png" // Updated path with leading slash
             alt="Adem Ben Amor"
             width={100}
-            height={200}
+            height={150}
             className="avatar-box"
           />
         </figure>
