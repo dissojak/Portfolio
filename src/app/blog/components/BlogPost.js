@@ -6,7 +6,7 @@ const BlogPost = ({ imgSrc, altText, category, date, title, description }) => (
   <li className="blog-post-item">
     <a href="#">
       <figure className="blog-banner-box">
-      <Image src={`./assets/images/${imgSrc}`} alt={altText} loading="lazy" height={150} width={300}/>
+      <Image src={`/assets/images/${imgSrc}`} alt={altText} loading="lazy" height={150} width={300}/>
       </figure>
 
       <div className="blog-content">
