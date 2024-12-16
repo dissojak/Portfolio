@@ -1,19 +1,11 @@
-// src/app/page.js
+// src/app/page.js ==> INDEX
 
-// import Portfolio from '../components/Portfolio';
-// import About from '../components/About';
-// import Skills from '../components/Skills';
-// import Projects from '../components/Projects';
-// import Contact from '../components/Contact';
+import About from "./about/page";
 
 export default function HomePage() {
   return (
     <>
-      {/* <Portfolio />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact /> */}
+      <About/>
     </>
   );
 }
